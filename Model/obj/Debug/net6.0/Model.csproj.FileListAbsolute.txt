@@ -45,3 +45,15 @@ C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0
 C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\refint\Model.dll
 C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.pdb
 C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\ref\Model.dll
+C:\Users\trist\source\repos\RaceSim\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\trist\source\repos\RaceSim\Model\bin\Debug\net6.0\Model.dll
+C:\Users\trist\source\repos\RaceSim\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.sourcelink.json
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.dll
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\trist\source\repos\RaceSim\Model\obj\Debug\net6.0\ref\Model.dll

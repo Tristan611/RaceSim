@@ -7,10 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Model;
 
+
 namespace Controller
 {
     public static class Data
     {
+        public static event EventHandler RaceChanged;
+
         public static Competition Competition { get; set; }
         public static Race CurrentRace { get; set; }
         
@@ -56,6 +59,7 @@ namespace Controller
             if(Next != null)
             {
                 CurrentRace = new Race(Next, Competition.Drivers);
+                RaceChanged?.Invoke(null, EventArgs.Empty);
             }
         }
     }

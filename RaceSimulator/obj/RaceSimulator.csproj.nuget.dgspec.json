@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\RaceSimulator\\RaceSimulator.csproj": {}
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj": {}
   },
   "projects": {
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj": {
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
         "projectName": "ControllerTest",
-        "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj",
-        "packagesPath": "C:\\Users\\31681\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\obj\\",
+        "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\31681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj"
               }
             }
           }
@@ -49,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -92,24 +92,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\Controller.csproj": {
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\Controller.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\Controller.csproj",
-        "packagesPath": "C:\\Users\\31681\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\obj\\",
+        "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\31681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,11 +125,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj"
               },
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj"
               }
             }
           }
@@ -144,7 +144,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -165,24 +165,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\31681\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\obj\\",
+        "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\31681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -210,7 +210,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -231,24 +231,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\RaceSimulator\\RaceSimulator.csproj": {
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\RaceSimulator\\RaceSimulator.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj",
         "projectName": "RaceSimulator",
-        "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\RaceSimulator\\RaceSimulator.csproj",
-        "packagesPath": "C:\\Users\\31681\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\RaceSimulator\\obj\\",
+        "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\31681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -264,14 +264,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\ControllerTest\\ControllerTest.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj"
               },
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\Controller.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Controller\\Controller.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj"
               },
-              "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {
-                "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj"
+              "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj"
               }
             }
           }
@@ -286,7 +286,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -307,7 +307,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {}
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj": {
+    "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\31681\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\Leerjaar2\\Periode1en2\\CSharp\\RaceSim\\racing_sim\\Model\\obj\\",
+        "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\31681\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

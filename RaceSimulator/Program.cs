@@ -11,7 +11,11 @@ Visualize.DrawTrack(CurrentRace.Track);
 //Visualize.MainLoop();
 CurrentRace.DriversChanged += DriversChangedHandler;
 
-
+Controller.Data.RaceChanged += (s, e) =>
+{
+    CurrentRace.DriversChanged += DriversChangedHandler;
+    Visualize.DrawTrack(CurrentRace.Track);
+};
 
 for (; ; )
 { 

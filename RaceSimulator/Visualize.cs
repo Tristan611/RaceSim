@@ -29,7 +29,6 @@ namespace RaceSimulator
         public static int Rechts = 0;
         public static int Onder = 0;
         public static int Links = 1;
-        public static List<Driver> Competitors = Data.Competition.Drivers;
         public static int SectionCounter = 0;
         #endregion
 
@@ -197,7 +196,7 @@ namespace RaceSimulator
             var currentTop = Top;
             string Replace1 = " ";
             string Replace2 = " ";
-            foreach (Driver racer in Competitors)
+            foreach (Driver racer in Data.Competition.Drivers)
             {
                 if (racer.PosOnTrack == SectionCounter)
                 {
