@@ -1,0 +1,112 @@
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\ControllerTest.deps.json
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\ControllerTest.runtimeconfig.json
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\testhost.exe
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\testhost.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\nunit.engine.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\nunit.engine.api.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\nunit.engine.core.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Controller.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Controller.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\ControllerTest.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\ControllerTest.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\bin\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\Controller.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\testhost.exe
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\testhost.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.api.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.core.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.deps.json
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.runtimeconfig.json
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Controller.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Controller.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Model.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\bin\Debug\net6.0\Model.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\Controller.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testhost.exe
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testhost.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.api.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.core.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.deps.json
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.runtimeconfig.json
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.CopyComplete
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testhost.exe
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testhost.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.api.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\nunit.engine.core.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.deps.json
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.runtimeconfig.json
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Controller.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Model.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\ControllerTest.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\bin\Debug\net6.0\Model.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.csproj.Up2Date
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\refint\Controller.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\Controller.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Controller\obj\Debug\net6.0\ref\Controller.dll

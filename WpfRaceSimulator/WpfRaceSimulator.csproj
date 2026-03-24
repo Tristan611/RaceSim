@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pictures\FinishRaceSim.png" />
+    <None Remove="Pictures\LeftCornerStartEastRaceSim.png" />
+    <None Remove="Pictures\LeftCornerStartNorthRaceSim.png" />
+    <None Remove="Pictures\LeftCornerStartSouthRaceSim.png" />
+    <None Remove="Pictures\LeftCornerStartWestRaceSim.png" />
+    <None Remove="Pictures\LuigiKartRaceSim.png" />
+    <None Remove="Pictures\MarioKartRaceSim.png" />
+    <None Remove="Pictures\RightCornerStartEastRaceSim.png" />
+    <None Remove="Pictures\RightCornerStartNorthRaceSim.png" />
+    <None Remove="Pictures\RightCornerStartSouthRaceSim.png" />
+    <None Remove="Pictures\RightCornerStartWestRaceSim.png" />
+    <None Remove="Pictures\StartGridHorizontal.png" />
+    <None Remove="Pictures\StartGridRaceSim.png" />
+    <None Remove="Pictures\StraightHorizontalRaceSim.png" />
+    <None Remove="Pictures\StraightRaceSim.png" />
+    <None Remove="Pictures\YoshiKartRaceSim.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pictures\FinishRaceSim.png" />
+    <Content Include="Pictures\LeftCornerStartEastRaceSim.png" />
+    <Content Include="Pictures\LeftCornerStartNorthRaceSim.png" />
+    <Content Include="Pictures\LeftCornerStartSouthRaceSim.png" />
+    <Content Include="Pictures\LeftCornerStartWestRaceSim.png" />
+    <Content Include="Pictures\LuigiKartRaceSim.png" />
+    <Content Include="Pictures\MarioKartRaceSim.png" />
+    <Content Include="Pictures\RightCornerStartEastRaceSim.png" />
+    <Content Include="Pictures\RightCornerStartNorthRaceSim.png" />
+    <Content Include="Pictures\RightCornerStartSouthRaceSim.png" />
+    <Content Include="Pictures\RightCornerStartWestRaceSim.png" />
+    <Content Include="Pictures\StartGridHorizontal.png" />
+    <Content Include="Pictures\StartGridRaceSim.png" />
+    <Content Include="Pictures\StraightHorizontalRaceSim.png" />
+    <Content Include="Pictures\StraightRaceSim.png" />
+    <Content Include="Pictures\YoshiKartRaceSim.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerTest\ControllerTest.csproj" />
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\RaceSimulator\RaceSimulator.csproj" />
+  </ItemGroup>
+
+</Project>

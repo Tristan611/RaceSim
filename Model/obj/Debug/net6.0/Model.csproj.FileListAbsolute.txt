@@ -1,0 +1,47 @@
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\bin\Debug\net6.0\Model.deps.json
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\bin\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\bin\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\refint\Model.dll
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\Periode1\RaceSimulator\Model\obj\Debug\net6.0\ref\Model.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\bin\Debug\net6.0\Model.deps.json
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\bin\Debug\net6.0\Model.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\bin\Debug\net6.0\Model.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\refint\Model.dll
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\Model.pdb
+C:\Users\Duink\OneDrive\Windesheim\Vakken\Jaar 2 - OOP & WebDev\C#\Race_sim\racing_sim\Model\obj\Debug\net6.0\ref\Model.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.deps.json
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.csproj.AssemblyReference.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\refint\Model.dll
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.pdb
+C:\school\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\ref\Model.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.deps.json
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\bin\Debug\net6.0\Model.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfoInputs.cache
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.AssemblyInfo.cs
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.csproj.CoreCompileInputs.cache
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\refint\Model.dll
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\Model.pdb
+C:\school\Leerjaar2\Periode1en2\CSharp\RaceSim\racing_sim\Model\obj\Debug\net6.0\ref\Model.dll
