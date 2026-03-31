@@ -128,12 +128,6 @@ namespace Controller
             if (FinishedDrivers.Count == Drivers.Count)
             {
                 FinishedDrivers.Clear();
-
-                foreach (var driver in Drivers)
-                {
-                    driver.ResetDrivers();
-                }
-
                 Data.NextRace();
             }
         }

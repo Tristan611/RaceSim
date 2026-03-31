@@ -14,8 +14,10 @@ Controller.Data.RaceChanged += (s, e) =>
     Visualize.DrawTrack(CurrentRace.Track);
 };
 
-for (; ; )
+while (CurrentRace != null)
 {
     CurrentRace.Update();
     Thread.Sleep(200);
 }
+
+Console.WriteLine("Alle races zijn klaar!");

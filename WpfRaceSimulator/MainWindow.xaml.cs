@@ -44,6 +44,13 @@ namespace WpfRaceSimulator
 
         private void OnRaceChanged(object sender, EventArgs e)
         {
+            if (Data.CurrentRace == null)
+            {
+                _timer.Stop();
+                MessageBox.Show("Alle races zijn klaar!");
+                return;
+            }
+
             Data.CurrentRace.DriversChanged += DriversChangedHandler;
 
             TrackImage.Source = WPFVisualize.DrawTrack(Data.CurrentRace.Track);
@@ -111,6 +118,15 @@ namespace WpfRaceSimulator
         {
             foreach (var driver in Data.CurrentRace.Drivers)
             {
+                if (driver.Finish)
+                {
+                    driverElements[driver].Visibility = Visibility.Hidden;
+                    continue;
+                }
+                else
+                {
+                    driverElements[driver].Visibility = Visibility.Visible;
+                }
                 if (!driverElements.ContainsKey(driver))
                     continue;
 
@@ -122,24 +138,36 @@ namespace WpfRaceSimulator
 
                 driverImage.RenderTransformOrigin = new Point(0.5, 0.5);
 
-                Transform transform = drawInfo.Direction switch
+                var transformGroup = new TransformGroup();
+
+                // basisrichting
+                switch (drawInfo.Direction)
                 {
-                    // → normaal
-                    WPFVisualize.Direction.East => new RotateTransform(0),
+                    case WPFVisualize.Direction.East:
+                        transformGroup.Children.Add(new RotateTransform(0));
+                        break;
 
-                    // ↓ draaien
-                    WPFVisualize.Direction.South => new RotateTransform(90),
+                    case WPFVisualize.Direction.South:
+                        transformGroup.Children.Add(new RotateTransform(90));
+                        break;
 
-                    // ↑ draaien
-                    WPFVisualize.Direction.North => new RotateTransform(270),
+                    case WPFVisualize.Direction.North:
+                        transformGroup.Children.Add(new RotateTransform(270));
+                        break;
 
-                    // ← spiegelen (NIET roteren)
-                    WPFVisualize.Direction.West => new ScaleTransform(-1, 1),
+                    case WPFVisualize.Direction.West:
+                        transformGroup.Children.Add(new ScaleTransform(-1, 1));
+                        break;
+                }
 
-                    _ => new RotateTransform(0)
-                };
+                // extra spin als kapot
+                if (driver.Equipment.isBroken)
+                {
+                    double spinAngle = (Environment.TickCount / 10) % 360;
+                    transformGroup.Children.Add(new RotateTransform(spinAngle));
+                }
 
-                driverImage.RenderTransform = transform;
+                driverImage.RenderTransform = transformGroup;
 
                 double baseX = drawInfo.X * SectionSize;
                 double baseY = drawInfo.Y * SectionSize;

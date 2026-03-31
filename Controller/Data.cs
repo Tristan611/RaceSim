@@ -94,12 +94,19 @@ namespace Controller
             }
             catch (IOException)
             {
-                // Geen console aanwezig (bijvoorbeeld in WPF)
+                // Geen console aanwezig
             }
-            var Next = Competition.NextTrack();
-            if(Next != null)
+
+            var next = Competition.NextTrack();
+
+            if (next != null)
             {
-                CurrentRace = new Race(Next, Competition.Drivers);
+                CurrentRace = new Race(next, Competition.Drivers);
+                RaceChanged?.Invoke(null, EventArgs.Empty);
+            }
+            else
+            {
+                CurrentRace = null;
                 RaceChanged?.Invoke(null, EventArgs.Empty);
             }
         }
