@@ -43,65 +43,48 @@ namespace Model
 
         public void CheckNextposition()
         {
-            int TotalTrackLength = (Competition.CurrentRaceTrack.Sections.Count * 100) - 100;
-            int NextRacePosition = RaceProgress + CalculateDriverSpeed();
-            int ExpPosOnTrack = (NextRacePosition % TotalTrackLength) / 100; // nog even checken
-            Lap = (NextRacePosition / TotalTrackLength);
-            bool PosLeftAvailable = true;
-            bool PosRightAvailable = true;
+            int totalTrackLength = Competition.CurrentRaceTrack.Sections.Count * 100;
+            int nextRacePosition = RaceProgress + CalculateDriverSpeed();
+
+            if (nextRacePosition >= totalTrackLength * 3)
+            {
+                Finish = true;
+                RaceProgress = totalTrackLength * 3;
+                return;
+            }
+
+            int expPosOnTrack = (nextRacePosition % totalTrackLength) / 100;
+            Lap = nextRacePosition / totalTrackLength;
+
+            bool posLeftAvailable = true;
+            bool posRightAvailable = true;
 
             foreach (var driver in Competition.Drivers)
             {
+                if (driver.PosOnTrack == expPosOnTrack && driver.Name != Name && !driver.Finish)
                 {
-                    if (driver.PosOnTrack == ExpPosOnTrack && driver.Name != Name)
-                    {
-                        if (driver.LeftOrRight == 0)
-                        {
-                            PosLeftAvailable = false;
-                        }
-                        else
-                        {
-                            PosRightAvailable = false;
-                        }
-
-                    }
+                    if (driver.LeftOrRight == 0)
+                        posLeftAvailable = false;
+                    else
+                        posRightAvailable = false;
                 }
-
             }
 
-            if (PosLeftAvailable == false && PosRightAvailable == false)
+            if (!posLeftAvailable && !posRightAvailable)
             {
                 return;
             }
 
-            if (Lap == 3)
-            {
-                Finish = true;
-                RaceProgress += 100;
-            }
+            RaceProgress = nextRacePosition;
 
-            RaceProgress = NextRacePosition;
-
-            if (ExpPosOnTrack == PosOnTrack)
+            if (expPosOnTrack == PosOnTrack)
             {
                 return;
             }
-
-             Debug.WriteLine("Ik zet hier driverChangedPos op true");
 
             ChangedDriverPosition = true;
-            PosOnTrack = ExpPosOnTrack;
-
-            if (PosLeftAvailable)
-            {
-                LeftOrRight = 0;
-            }
-            else
-            {
-                LeftOrRight = 1;
-            }
-
-
+            PosOnTrack = expPosOnTrack;
+            LeftOrRight = posLeftAvailable ? 0 : 1;
         }
 
 

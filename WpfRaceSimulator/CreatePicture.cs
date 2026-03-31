@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+using System.IO;
 using System.Windows.Media.Imaging;
-using Model;
 using Color = System.Drawing.Color;
 
 namespace WpfRaceSimulator
@@ -16,74 +11,84 @@ namespace WpfRaceSimulator
     public static class CreatePicture
     {
         private static Dictionary<string, Bitmap> PictureClassCache = new Dictionary<string, Bitmap>();
-        
-        public static Bitmap AddToPictureCache(string url)
+
+        /// <summary>
+        /// Haal een bitmap uit de cache of laad hem vanaf schijf.
+        /// </summary>
+        public static Bitmap AddToPictureCache(string filename)
         {
             Bitmap bitmap = null;
-            if (!PictureClassCache.ContainsKey(url))
-            { 
-                PictureClassCache.Add(url, new Bitmap(url));
-                PictureClassCache.TryGetValue(url, out bitmap);
-            }
-            else
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "pictures", filename);
+
+            if (!PictureClassCache.TryGetValue(path, out bitmap))
             {
-                PictureClassCache.TryGetValue(url, out bitmap);
+                if (!File.Exists(path))
+                    throw new FileNotFoundException($"Afbeelding niet gevonden: {path}");
+
+                // Probeer toe te voegen, maar vang de exception af als het toch al bestaat
+                try
+                {
+                    PictureClassCache.Add(path, new Bitmap(path));
+                }
+                catch (ArgumentException)
+                {
+                    // Iemand anders heeft hem net toegevoegd, dat is oké
+                }
+                PictureClassCache.TryGetValue(path, out bitmap);
             }
             return bitmap;
         }
 
+        /// <summary>
+        /// Leeg de cache (optioneel te gebruiken bij trackwissel).
+        /// </summary>
         public static void ClearCache()
         {
+            foreach (var bmp in PictureClassCache.Values)
+            {
+                bmp.Dispose();
+            }
             PictureClassCache.Clear();
         }
 
-        public static Bitmap GiveEmptyBitmap(int x, int y)
+        /// <summary>
+        /// Geef een lege bitmap van de gewenste grootte.
+        /// </summary>
+        public static Bitmap GiveEmptyBitmap(int width, int height)
         {
-            string empty = "empty";
-            Bitmap emptyBitMap = null;
-            if (PictureClassCache.ContainsKey(empty))
+            Bitmap emptyBitmap = new Bitmap(width, height);
+            using (Graphics g = Graphics.FromImage(emptyBitmap))
             {
-                emptyBitMap = PictureClassCache[empty];
+                g.Clear(Color.Lime); // Of een andere achtergrondkleur
             }
-            else
-            {
-                emptyBitMap = new Bitmap("empty");
-                emptyBitMap.SetResolution(x,y);
-                SolidBrush kleur = new SolidBrush(Color.Lime);
-                Graphics bitGraphics = Graphics.FromImage(emptyBitMap);
-                bitGraphics.FillRectangle(kleur,0,0,x,y);
-                PictureClassCache.Add(empty, emptyBitMap);
-            }
-
-            Bitmap newEmptyBitmap = null;
-            newEmptyBitmap = (Bitmap)emptyBitMap.Clone();
-            return newEmptyBitmap;
+            return emptyBitmap;
         }
+
+        /// <summary>
+        /// Zet een GDI+ Bitmap om naar een WPF BitmapSource.
+        /// </summary>
         public static BitmapSource CreateBitmapSourceFromGdiBitmap(Bitmap bitmap)
         {
             if (bitmap == null)
-                throw new ArgumentNullException("bitmap");
+                throw new ArgumentNullException(nameof(bitmap));
 
             var rect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-
             var bitmapData = bitmap.LockBits(
                 rect,
-                ImageLockMode.ReadWrite,
+                ImageLockMode.ReadOnly,
                 System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 
             try
             {
-                var size = (rect.Width * rect.Height) * 4;
-
                 return BitmapSource.Create(
                     bitmap.Width,
                     bitmap.Height,
                     bitmap.HorizontalResolution,
                     bitmap.VerticalResolution,
-                    PixelFormats.Bgra32,
+                    System.Windows.Media.PixelFormats.Bgra32,
                     null,
                     bitmapData.Scan0,
-                    size,
+                    bitmapData.Stride * bitmapData.Height,
                     bitmapData.Stride);
             }
             finally
@@ -91,11 +96,5 @@ namespace WpfRaceSimulator
                 bitmap.UnlockBits(bitmapData);
             }
         }
-
-        public static void CalculateImageDimensions()
-        {
-           
-        }
     }
-
 }

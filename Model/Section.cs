@@ -10,6 +10,7 @@ namespace Model
     { public Section(SectionTypes sectionType)
         {
             SectionType = sectionType;
+            Data = new SectionData();
         }
 
         public enum SectionTypes
@@ -22,5 +23,6 @@ namespace Model
         }
 
         public SectionTypes SectionType { get; set; }
+        public SectionData Data { get; set; }
     }
 }

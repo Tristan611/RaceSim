@@ -38,23 +38,64 @@ namespace Controller
         public static void AddTracks()
         {
             //Section.SectionTypes[] section1 = { Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.RightCorner,Section.SectionTypes.Straight,Section.SectionTypes.Straight,Section.SectionTypes.Straight,Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.Straight,Section.SectionTypes.Straight, Section.SectionTypes.Straight,Section.SectionTypes.Straight,Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.Straight, Section.SectionTypes.Straight, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner, Section.SectionTypes.Finish};
-            Section.SectionTypes[] section2 = { Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.Straight,Section.SectionTypes.Straight, Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner,Section.SectionTypes.Straight, Section.SectionTypes.Finish };
-            Section.SectionTypes[] section3 = { Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.Finish };
+            //Section.SectionTypes[] section2 = { Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.Straight,Section.SectionTypes.Straight, Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner,Section.SectionTypes.LeftCorner,Section.SectionTypes.RightCorner,Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner,Section.SectionTypes.Straight, Section.SectionTypes.Finish };
+            //Section.SectionTypes[] section3 = { Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.StartGrid, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.LeftCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.RightCorner, Section.SectionTypes.Straight, Section.SectionTypes.Finish };
 
             //Track track1 = new("Rainbow Road", section1);
-            Track track2 = new("Coconut Mall", section2);
-            Track track3 = new("Rainbow Road2", section3);
+            //Track track2 = new("Coconut Mall", section2);
+            //Track track3 = new("Rainbow Road2", section3);
 
             //Competition.Tracks.Enqueue(track1);
-            Competition.Tracks.Enqueue(track2);
-            Competition.Tracks.Enqueue(track3);
+            //Competition.Tracks.Enqueue(track2);
+            //Competition.Tracks.Enqueue(track3);
+             Section.SectionTypes[] rectangleTrack =
+    {
+        // START
+        Section.SectionTypes.StartGrid,
+        Section.SectionTypes.StartGrid,
 
+        // BOVENKANT →
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.RightCorner,   // ↓
+
+        // RECHTERKANT ↓
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.RightCorner,   // ←
+
+        // ONDERKANT ←
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.RightCorner,   // ↑
+
+        // LINKERKANT ↑
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.Straight,
+        Section.SectionTypes.RightCorner,   // → terug naar start
+
+        // FINISH
+        Section.SectionTypes.Finish
+    };
+
+    Track track1 = new("Rectangle Circuit", rectangleTrack);
+
+    Competition.Tracks.Enqueue(track1);
 
         }
 
         public static void NextRace()
         {
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (IOException)
+            {
+                // Geen console aanwezig (bijvoorbeeld in WPF)
+            }
             var Next = Competition.NextTrack();
             if(Next != null)
             {

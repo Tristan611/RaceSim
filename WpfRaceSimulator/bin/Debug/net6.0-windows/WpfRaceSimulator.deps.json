@@ -700,7 +700,10 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "Controller.dll": {}
+          "Controller.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ControllerTest/1.0.0": {
@@ -713,12 +716,18 @@
           "coverlet.collector": "3.1.2"
         },
         "runtime": {
-          "ControllerTest.dll": {}
+          "ControllerTest.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Model/1.0.0": {
         "runtime": {
-          "Model.dll": {}
+          "Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "RaceSimulator/1.0.0": {
@@ -728,7 +737,10 @@
           "Model": "1.0.0"
         },
         "runtime": {
-          "RaceSimulator.dll": {}
+          "RaceSimulator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

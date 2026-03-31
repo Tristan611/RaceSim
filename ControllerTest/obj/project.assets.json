@@ -3959,9 +3959,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
+      "projectUniqueName": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
       "projectName": "ControllerTest",
-      "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
+      "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\ControllerTest\\ControllerTest.csproj",
       "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -3985,8 +3985,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj"
+            "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Model\\Model.csproj"
             }
           }
         }

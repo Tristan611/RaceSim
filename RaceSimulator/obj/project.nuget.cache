@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVhKCdhvAZI=",
+  "dgSpecHash": "BegKCzfotE0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj",
+  "projectFilePath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trist\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\trist\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

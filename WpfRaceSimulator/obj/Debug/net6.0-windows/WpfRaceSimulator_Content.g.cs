@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/finishracesimvertical.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/finishracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/leftcornerstarteastracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/leftcornerstartnorthracesim.png")]

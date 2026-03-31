@@ -4179,11 +4179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trist\\source\\repos\\RaceSim\\WpfRaceSimulator\\WpfRaceSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\WpfRaceSimulator\\WpfRaceSimulator.csproj",
       "projectName": "WpfRaceSimulator",
-      "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\WpfRaceSimulator\\WpfRaceSimulator.csproj",
+      "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\WpfRaceSimulator\\WpfRaceSimulator.csproj",
       "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\WpfRaceSimulator\\obj\\",
+      "outputPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\WpfRaceSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4205,17 +4205,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj": {
-              "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\ControllerTest\\ControllerTest.csproj"
+            "C:\\Users\\trist\\Source\\Repos\\RaceSim\\ControllerTest\\ControllerTest.csproj": {
+              "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\ControllerTest\\ControllerTest.csproj"
             },
-            "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj": {
-              "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Controller\\Controller.csproj"
+            "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Controller\\Controller.csproj"
             },
-            "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\Model\\Model.csproj"
+            "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\Model\\Model.csproj"
             },
-            "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj": {
-              "projectPath": "C:\\Users\\trist\\source\\repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj"
+            "C:\\Users\\trist\\Source\\Repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj": {
+              "projectPath": "C:\\Users\\trist\\Source\\Repos\\RaceSim\\RaceSimulator\\RaceSimulator.csproj"
             }
           }
         }

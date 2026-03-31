@@ -1,14 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Runtime.CompilerServices;
-using Controller;
-using Model;
+﻿using Controller;
 using RaceSimulator;
 using static Controller.Data;
 using static RaceSimulator.Visualize;
+using System.Threading;
 
 Controller.Data.Initialize();
 Visualize.DrawTrack(CurrentRace.Track);
-//Visualize.MainLoop();
 CurrentRace.DriversChanged += DriversChangedHandler;
 
 Controller.Data.RaceChanged += (s, e) =>
@@ -18,6 +15,7 @@ Controller.Data.RaceChanged += (s, e) =>
 };
 
 for (; ; )
-{ 
-    Thread.Sleep(100);
+{
+    CurrentRace.Update();
+    Thread.Sleep(200);
 }

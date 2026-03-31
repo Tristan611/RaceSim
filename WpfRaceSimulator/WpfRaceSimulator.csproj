@@ -27,22 +27,57 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pictures\FinishRaceSim.png" />
-    <Content Include="Pictures\LeftCornerStartEastRaceSim.png" />
-    <Content Include="Pictures\LeftCornerStartNorthRaceSim.png" />
-    <Content Include="Pictures\LeftCornerStartSouthRaceSim.png" />
-    <Content Include="Pictures\LeftCornerStartWestRaceSim.png" />
-    <Content Include="Pictures\LuigiKartRaceSim.png" />
-    <Content Include="Pictures\MarioKartRaceSim.png" />
-    <Content Include="Pictures\RightCornerStartEastRaceSim.png" />
-    <Content Include="Pictures\RightCornerStartNorthRaceSim.png" />
-    <Content Include="Pictures\RightCornerStartSouthRaceSim.png" />
-    <Content Include="Pictures\RightCornerStartWestRaceSim.png" />
-    <Content Include="Pictures\StartGridHorizontal.png" />
-    <Content Include="Pictures\StartGridRaceSim.png" />
-    <Content Include="Pictures\StraightHorizontalRaceSim.png" />
-    <Content Include="Pictures\StraightRaceSim.png" />
-    <Content Include="Pictures\YoshiKartRaceSim.png" />
+    <Content Include="Pictures\FinishRaceSimVertical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\FinishRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\LeftCornerStartEastRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\LeftCornerStartNorthRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\LeftCornerStartSouthRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\LeftCornerStartWestRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\LuigiKartRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\MarioKartRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\RightCornerStartEastRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\RightCornerStartNorthRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\RightCornerStartSouthRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\RightCornerStartWestRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\StartGridHorizontal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\StartGridRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\StraightHorizontalRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\StraightRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\YoshiKartRaceSim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
