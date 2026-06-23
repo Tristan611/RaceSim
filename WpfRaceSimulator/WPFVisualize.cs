@@ -53,7 +53,6 @@ namespace WpfRaceSimulator
             System.Diagnostics.Debug.WriteLine("DrawTrack wordt aangeroepen!");
             LastDrawnSections.Clear();
             int sectionSize = 64;
-            int maxSections = track.Sections.Count;
             int width = 2000;
             int height = 2000;
 
@@ -118,7 +117,6 @@ namespace WpfRaceSimulator
                     }
                 }
             }
-            bmp.Save("debug_output.png");
             return CreateBitmapSourceFromGdiBitmap(bmp);
         }
 

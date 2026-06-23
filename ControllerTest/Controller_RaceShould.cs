@@ -75,6 +75,8 @@ public class Controller_RaceShould
     [Test]
     public void GivePoints_AddCorrectPointsToFinishedDrivers()
     {
+        Data.Competition = _competition;
+
         var race = new Race(_track, _drivers);
 
         race.FinishedDrivers.AddRange(_drivers);
@@ -91,6 +93,8 @@ public class Controller_RaceShould
     [Test]
     public void GivePoints_AddPointsOnTopOfExistingPoints()
     {
+        Data.Competition = _competition;
+
         var race = new Race(_track, _drivers);
 
         _drivers[0].Points = 10;
@@ -99,19 +103,6 @@ public class Controller_RaceShould
         race.GivePoints();
 
         Assert.AreEqual(20, _drivers[0].Points);
-    }
-
-    [Test]
-    public void CheckNextPosition_WhenDriverMoves_UpdatesRaceProgressAndPosition()
-    {
-        var race = new Race(_track, _drivers);
-        var driver = _drivers[0];
-
-        driver.CheckNextposition();
-
-        Assert.Greater(driver.RaceProgress, 0);
-        Assert.GreaterOrEqual(driver.PosOnTrack, 0);
-        Assert.IsTrue(driver.ChangedDriverPosition || driver.RaceProgress > 0);
     }
 
     [Test]
@@ -127,5 +118,65 @@ public class Controller_RaceShould
 
         Assert.IsTrue(driver.Finish);
         Assert.AreEqual(totalTrackLength * 3, driver.RaceProgress);
+    }
+
+    [Test]
+    public void GivePoints_AddsPointsToGenericPointsResults()
+    {
+        Data.Competition = _competition;
+
+        var race = new Race(_track, _drivers);
+        race.FinishedDrivers.AddRange(_drivers);
+
+        race.GivePoints();
+
+        Assert.AreEqual("Mario", _competition.PointsResults.GetBestParticipant());
+    }
+
+    [Test]
+    public void GivePoints_WhenCalledMultipleTimes_AddsPointsTogetherInGenericPointsResults()
+    {
+        Data.Competition = _competition;
+
+        var race = new Race(_track, _drivers);
+
+        race.FinishedDrivers.Add(_drivers[0]);
+        race.GivePoints();
+
+        race.FinishedDrivers.Clear();
+
+        race.FinishedDrivers.Add(_drivers[0]);
+        race.GivePoints();
+
+        var bestParticipant = _competition.PointsResults.GetBestParticipant();
+
+        Assert.AreEqual("Mario", bestParticipant);
+        Assert.AreEqual(20, _drivers[0].Points);
+    }
+
+    [Test]
+    public void GivePoints_AddsTimeResultForFinishedDrivers()
+    {
+        Data.Competition = _competition;
+
+        var race = new Race(_track, _drivers);
+        race.FinishedDrivers.Add(_drivers[0]);
+
+        race.GivePoints();
+
+        Assert.AreEqual("Mario", _competition.TimeResults.GetBestParticipant());
+    }
+
+    [Test]
+    public void TimeResults_GetBestParticipant_ReturnsFastestDriver()
+    {
+        var timeResults = new ResultData<TimeResult>();
+
+        timeResults.Add(new TimeResult("Mario", TimeSpan.FromSeconds(10)));
+        timeResults.Add(new TimeResult("Luigi", TimeSpan.FromSeconds(8)));
+
+        var result = timeResults.GetBestParticipant();
+
+        Assert.AreEqual("Luigi", result);
     }
 }

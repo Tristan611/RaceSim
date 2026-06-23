@@ -70,6 +70,7 @@ namespace Controller
         {
             Track = track;
             Drivers = drivers;
+            StartTime = DateTime.Now;
 
             RandomizeEquipment();
             SetPlayerStartPositions(track, drivers);
@@ -148,8 +149,12 @@ namespace Controller
                     result += $"{i + 1}. {championshipStandings[i].Name} - {championshipStandings[i].Points} punten\n";
                 }
 
-                Data.RaceFinished?.Invoke(result);
+                result += "\nStatistieken:\n";
+                result += $"Beste op punten: {Data.Competition.PointsResults.GetBestParticipant()}\n";
+                result += $"Snelste finisher: {Data.Competition.TimeResults.GetBestParticipant()}\n";
 
+                Data.RaceFinished?.Invoke(result);
+                    
                 FinishedDrivers.Clear();
                 Data.NextRace();
             }
@@ -176,10 +181,21 @@ namespace Controller
             {
                 if (i < pointsPerPosition.Length)
                 {
-                    FinishedDrivers[i].Points += pointsPerPosition[i];
+                    int points = pointsPerPosition[i];
+
+                    FinishedDrivers[i].Points += points;
+
+                    Data.Competition.PointsResults.Add(
+                        new PointsResult(FinishedDrivers[i].Name, points)
+                    );
+
+                    Data.Competition.TimeResults.Add(
+                        new TimeResult(FinishedDrivers[i].Name, DateTime.Now - StartTime)
+                    );
                 }
             }
         }
+
         public void MagWeerVerderRijden(Driver driver)
         {
             if (_random2.Next(0, 50) > 35)

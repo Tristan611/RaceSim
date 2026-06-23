@@ -8,6 +8,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using Controller;
+using WpfRaceSimulator.ViewModels;
 using Model;
 
 
@@ -19,12 +20,37 @@ namespace WpfRaceSimulator
         private Dictionary<Driver, Image> driverElements = new Dictionary<Driver, Image>();
         private const int SectionSize = 64;
         private const int DriverSize = 20;
+        private RaceViewModel _viewModel;
+        private RaceStatsWindow _raceStatsWindow;
+        private CompetitionStatsWindow _competitionStatsWindow;
+
+        private void MenuItem_RaceStats_Click(object sender, RoutedEventArgs e)
+        {
+            _raceStatsWindow = new RaceStatsWindow();
+            _raceStatsWindow.DataContext = _viewModel;
+            _raceStatsWindow.Show();
+        }
+
+        private void MenuItem_CompetitionStats_Click(object sender, RoutedEventArgs e)
+        {
+            _competitionStatsWindow = new CompetitionStatsWindow();
+            _competitionStatsWindow.DataContext = _viewModel;
+            _competitionStatsWindow.Show();
+        }
+
+        private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
 
         public MainWindow()
         {
             InitializeComponent();
 
             Data.Initialize();
+
+            _viewModel = new RaceViewModel();
+            DataContext = _viewModel;
 
             InitializeDriverUI();
 
@@ -39,6 +65,7 @@ namespace WpfRaceSimulator
             _timer.Tick += (s, e) =>
             {
                 Data.CurrentRace.Update();
+                _viewModel.Refresh();
             };
             _timer.Start();
         }
