@@ -31,10 +31,10 @@ namespace Controller
        public static void AddParticipants()
        {
            Competition.Drivers.Add(new Driver("Mario", 0, IParticipant.TeamColors.Red, new Car(0, 10, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Luigi", 0, IParticipant.TeamColors.Green, new Car(0, 7, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Wario", 0, IParticipant.TeamColors.Yellow, new Car(0, 8, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Peach", 0, IParticipant.TeamColors.Blue, new Car(0, 9, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Bowser", 0, IParticipant.TeamColors.Grey, new Car(0, 11, 10, false), Competition));
+           Competition.Drivers.Add(new Driver("Luigi", 0, IParticipant.TeamColors.Green, new Car(0, 10, 10, false), Competition));
+           Competition.Drivers.Add(new Driver("Wario", 0, IParticipant.TeamColors.Yellow, new Car(0, 10, 10, false), Competition));
+           Competition.Drivers.Add(new Driver("Peach", 0, IParticipant.TeamColors.Blue, new Car(0, 10, 10, false), Competition));
+           Competition.Drivers.Add(new Driver("Bowser", 0, IParticipant.TeamColors.Grey, new Car(0, 10, 10, false), Competition));
 
         }
 

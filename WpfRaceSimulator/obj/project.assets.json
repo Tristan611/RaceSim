@@ -1036,7 +1036,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ControllerTest": "1.0.0",
           "Model": "1.0.0"
         },
         "compile": {
@@ -1050,6 +1049,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Controller": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "Model": "1.0.0",
           "NUnit": "3.13.3",

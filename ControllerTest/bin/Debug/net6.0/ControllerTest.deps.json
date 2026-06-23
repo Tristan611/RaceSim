@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ControllerTest/1.0.0": {
         "dependencies": {
+          "Controller": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "Model": "1.0.0",
           "NUnit": "3.13.3",
@@ -653,6 +654,17 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
+      "Controller/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "Controller.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {
@@ -997,6 +1009,11 @@
       "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
+    },
+    "Controller/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Model/1.0.0": {
       "type": "project",
