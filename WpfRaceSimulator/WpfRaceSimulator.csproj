@@ -8,13 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Pictures\BowserKartRaceSim.png" />
+    <None Remove="Pictures\BowserStartImage.png" />
     <None Remove="Pictures\FinishRaceSim.png" />
     <None Remove="Pictures\LeftCornerStartEastRaceSim.png" />
     <None Remove="Pictures\LeftCornerStartNorthRaceSim.png" />
     <None Remove="Pictures\LeftCornerStartSouthRaceSim.png" />
     <None Remove="Pictures\LeftCornerStartWestRaceSim.png" />
     <None Remove="Pictures\LuigiKartRaceSim.png" />
+    <None Remove="Pictures\LuigiStartImage.png" />
     <None Remove="Pictures\MarioKartRaceSim.png" />
+    <None Remove="Pictures\MarioStartImage.png" />
+    <None Remove="Pictures\PeachKartRaceSim.png" />
+    <None Remove="Pictures\PeachStartImage.png" />
     <None Remove="Pictures\RightCornerStartEastRaceSim.png" />
     <None Remove="Pictures\RightCornerStartNorthRaceSim.png" />
     <None Remove="Pictures\RightCornerStartSouthRaceSim.png" />
@@ -24,9 +30,16 @@
     <None Remove="Pictures\StraightHorizontalRaceSim.png" />
     <None Remove="Pictures\StraightRaceSim.png" />
     <None Remove="Pictures\YoshiKartRaceSim.png" />
+    <None Remove="Pictures\YoshiStartImage.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Pictures\BowserKartRaceSim.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\BowserStartImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Pictures\FinishRaceSimVertical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -48,8 +61,20 @@
     <Content Include="Pictures\LuigiKartRaceSim.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Pictures\LuigiStartImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Pictures\MarioKartRaceSim.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\MarioStartImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\PeachKartRaceSim.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\PeachStartImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pictures\RightCornerStartEastRaceSim.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -77,6 +102,9 @@
     </Content>
     <Content Include="Pictures\YoshiKartRaceSim.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pictures\YoshiStartImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

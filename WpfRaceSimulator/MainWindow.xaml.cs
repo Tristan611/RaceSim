@@ -43,11 +43,11 @@ namespace WpfRaceSimulator
             Application.Current.Shutdown();
         }
 
-        public MainWindow()
+        public MainWindow(List<string> selectedDrivers, List<string> selectedTracks)
         {
             InitializeComponent();
 
-            Data.Initialize();
+            Data.Initialize(selectedDrivers, selectedTracks);
 
             _viewModel = new RaceViewModel();
             DataContext = _viewModel;
@@ -112,9 +112,9 @@ namespace WpfRaceSimulator
             {
                 "Mario" => "MarioKartRaceSim.png",
                 "Luigi" => "LuigiKartRaceSim.png",
-                "Wario" => "YoshiKartRaceSim.png",
-                "Peach" => "YoshiKartRaceSim.png",
-                "Bowser" => "MarioKartRaceSim.png",
+                "Yoshi" => "YoshiKartRaceSim.png",
+                "Peach" => "PeachKartRaceSim.png",
+                "Bowser" => "BowserKartRaceSim.png",
                 _ => "MarioKartRaceSim.png"
             };
 

@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/bowserkartracesim.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/bowserstartimage.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/finishracesimvertical.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/finishracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/leftcornerstarteastracesim.png")]
@@ -15,7 +17,11 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/leftcornerstartsouthracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/leftcornerstartwestracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/luigikartracesim.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/luigistartimage.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/mariokartracesim.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/mariostartimage.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/peachkartracesim.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/peachstartimage.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/rightcornerstarteastracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/rightcornerstartnorthracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/rightcornerstartsouthracesim.png")]
@@ -25,5 +31,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/straighthorizontalracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/straightracesim.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/yoshikartracesim.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/yoshistartimage.png")]
 
 

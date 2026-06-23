@@ -38,7 +38,7 @@ public class Controller_RaceShould
             new Driver("Luigi", 0, IParticipant.TeamColors.Green, new Car(100, 10, 10, false), _competition),
             new Driver("Peach", 0, IParticipant.TeamColors.Blue, new Car(100, 10, 10, false), _competition),
             new Driver("Bowser", 0, IParticipant.TeamColors.Grey, new Car(100, 10, 10, false), _competition),
-            new Driver("Wario", 0, IParticipant.TeamColors.Yellow, new Car(100, 10, 10, false), _competition)
+            new Driver("Yoshi", 0, IParticipant.TeamColors.Yellow, new Car(100, 10, 10, false), _competition)
         };
 
         _competition.Drivers = _drivers;

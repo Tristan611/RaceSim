@@ -20,25 +20,34 @@ namespace Controller
         public static Action<string> RaceFinished;
 
         public static Action<string> ChampionshipFinished;
-        public static void Initialize ()
-       {
-           Competition = new Competition();
-           AddTracks();
-           AddParticipants();
-           NextRace();
-       }
+        public static void Initialize(List<string> selectedDrivers = null, List<string> selectedTracks = null)
+        {
+            Competition = new Competition();
+            AddTracks(selectedTracks);
+            AddParticipants(selectedDrivers);
+            NextRace();
+        }
+        public static void AddParticipants(List<string> selectedDrivers = null)
+        {
+            selectedDrivers ??= new List<string> { "Mario", "Luigi", "Yoshi", "Peach", "Bowser" };
 
-       public static void AddParticipants()
-       {
-           Competition.Drivers.Add(new Driver("Mario", 0, IParticipant.TeamColors.Red, new Car(0, 10, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Luigi", 0, IParticipant.TeamColors.Green, new Car(0, 10, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Wario", 0, IParticipant.TeamColors.Yellow, new Car(0, 10, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Peach", 0, IParticipant.TeamColors.Blue, new Car(0, 10, 10, false), Competition));
-           Competition.Drivers.Add(new Driver("Bowser", 0, IParticipant.TeamColors.Grey, new Car(0, 10, 10, false), Competition));
+            if (selectedDrivers.Contains("Mario"))
+                Competition.Drivers.Add(new Driver("Mario", 0, IParticipant.TeamColors.Red, new Car(0, 10, 10, false), Competition));
 
+            if (selectedDrivers.Contains("Luigi"))
+                Competition.Drivers.Add(new Driver("Luigi", 0, IParticipant.TeamColors.Green, new Car(0, 10, 10, false), Competition));
+
+            if (selectedDrivers.Contains("Yoshi"))
+                Competition.Drivers.Add(new Driver("Yoshi", 0, IParticipant.TeamColors.Yellow, new Car(0, 10, 10, false), Competition));
+
+            if (selectedDrivers.Contains("Peach"))
+                Competition.Drivers.Add(new Driver("Peach", 0, IParticipant.TeamColors.Blue, new Car(0, 10, 10, false), Competition));
+
+            if (selectedDrivers.Contains("Bowser"))
+                Competition.Drivers.Add(new Driver("Bowser", 0, IParticipant.TeamColors.Grey, new Car(0, 10, 10, false), Competition));
         }
 
-        public static void AddTracks()
+        public static void AddTracks(List<string> selectedTracks = null)
         {
             var S = Section.SectionTypes.Straight;
             var L = Section.SectionTypes.LeftCorner;
@@ -115,12 +124,31 @@ namespace Controller
                 R,
                 F
             };
+            selectedTracks ??= new List<string>
+            {
+                "Wide Oval",
+                "Chicane Loop",
+                "Double Bend",
+                "Technical Loop",
+                "Long Snake"
+            };
 
-            Competition.Tracks.Enqueue(new Track("Wide Oval", track1_WideOval));
-            Competition.Tracks.Enqueue(new Track("Chicane Loop", track2_ChicaneLoop));
-            Competition.Tracks.Enqueue(new Track("Double Bend", track3_DoubleBend));
-            Competition.Tracks.Enqueue(new Track("Technical Loop", track4_TechnicalLoop));
-            Competition.Tracks.Enqueue(new Track("Long Snake", track5_LongSnake));
+            if (selectedTracks.Contains("Wide Oval"))
+                Competition.Tracks.Enqueue(new Track("Wide Oval", track1_WideOval));
+            if (selectedTracks.Contains("Wide Oval"))
+                Competition.Tracks.Enqueue(new Track("Wide Oval", track1_WideOval));
+
+            if (selectedTracks.Contains("Chicane Loop"))
+                Competition.Tracks.Enqueue(new Track("Chicane Loop", track2_ChicaneLoop));
+
+            if (selectedTracks.Contains("Double Bend"))
+                Competition.Tracks.Enqueue(new Track("Double Bend", track3_DoubleBend));
+
+            if (selectedTracks.Contains("Technical Loop"))
+                Competition.Tracks.Enqueue(new Track("Technical Loop", track4_TechnicalLoop));
+
+            if (selectedTracks.Contains("Long Snake"))
+                Competition.Tracks.Enqueue(new Track("Long Snake", track5_LongSnake));
         }
 
         public static void NextRace()

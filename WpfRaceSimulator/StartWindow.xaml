@@ -1,0 +1,209 @@
+﻿<Window x:Class="WpfRaceSimulator.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Race Simulator"
+        Height="800"
+        Width="1100"
+        WindowStartupLocation="CenterScreen"
+        Background="#15192E">
+
+    <ScrollViewer>
+        <Grid Margin="30">
+            <Grid.Resources>
+                <Style x:Key="CardCheckBoxStyle" TargetType="CheckBox">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="CheckBox">
+                                <Border Width="180" Height="260"
+                                        Margin="10"
+                                        CornerRadius="15"
+                                        Background="#252B4A"
+                                        BorderBrush="#FFD966"
+                                        BorderThickness="3"
+                                        RenderTransformOrigin="0.5,0.5">
+                                    <Border.RenderTransform>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    </Border.RenderTransform>
+
+                                    <Grid>
+                                        <ContentPresenter HorizontalAlignment="Stretch"
+                                                          VerticalAlignment="Stretch"/>
+
+                                        <TextBlock x:Name="SelectedText"
+                                                   Text="GESELECTEERD"
+                                                   Foreground="#FFD966"
+                                                   FontWeight="Bold"
+                                                   FontSize="12"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Bottom"
+                                                   Margin="0,0,0,12"
+                                                   Visibility="Collapsed"/>
+                                    </Grid>
+                                </Border>
+
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="RenderTransform">
+                                            <Setter.Value>
+                                                <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+
+                                    <Trigger Property="IsChecked" Value="True">
+                                        <Setter Property="BorderBrush" Value="#7CFF6B"/>
+                                        <Setter Property="BorderThickness" Value="4"/>
+                                        <Setter TargetName="SelectedText" Property="Visibility" Value="Visible"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                <Style x:Key="TrackCardCheckBoxStyle" TargetType="CheckBox">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="CheckBox">
+                                <Border Width="170" Height="95"
+                        Margin="10"
+                        CornerRadius="12"
+                        Background="#252B4A"
+                        BorderBrush="#FFD966"
+                        BorderThickness="3">
+                                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBlock Text="{TemplateBinding Content}"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   FontSize="16"
+                                   HorizontalAlignment="Center"/>
+                                        <TextBlock x:Name="SelectedText"
+                                   Text="GESELECTEERD"
+                                   Foreground="#7CFF6B"
+                                   FontWeight="Bold"
+                                   FontSize="11"
+                                   HorizontalAlignment="Center"
+                                   Visibility="Collapsed"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Opacity" Value="0.85"/>
+                                    </Trigger>
+                                    <Trigger Property="IsChecked" Value="True">
+                                        <Setter Property="BorderBrush" Value="#7CFF6B"/>
+                                        <Setter Property="BorderThickness" Value="4"/>
+                                        <Setter TargetName="SelectedText" Property="Visibility" Value="Visible"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="GRAND PRIX"
+                           FontSize="52"
+                           FontWeight="Black"
+                           Foreground="#FFD966"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Kies je racers en circuits"
+                           FontSize="18"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <WrapPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,20,0,20">
+
+                <CheckBox x:Name="MarioCheckBox" IsChecked="False" Style="{StaticResource CardCheckBoxStyle}">
+                    <StackPanel>
+                        <TextBlock Text="MARIO" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,12"/>
+                        <Image Source="/pictures/MarioStartImage.png" Height="170" Stretch="Uniform"/>
+                    </StackPanel>
+                </CheckBox>
+
+                <CheckBox x:Name="LuigiCheckBox" IsChecked="False" Style="{StaticResource CardCheckBoxStyle}">
+                    <StackPanel>
+                        <TextBlock Text="LUIGI" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,12"/>
+                        <Image Source="/pictures/LuigiStartImage.png" Height="170" Stretch="Uniform"/>
+                    </StackPanel>
+                </CheckBox>
+
+                <CheckBox x:Name="YoshiCheckBox" IsChecked="False" Style="{StaticResource CardCheckBoxStyle}">
+                    <StackPanel>
+                        <TextBlock Text="YOSHI" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,12"/>
+                        <Image Source="/pictures/YoshiStartImage.png" Height="170" Stretch="Uniform"/>
+                    </StackPanel>
+                </CheckBox>
+
+                <CheckBox x:Name="PeachCheckBox" IsChecked="False" Style="{StaticResource CardCheckBoxStyle}">
+                    <StackPanel>
+                        <TextBlock Text="PEACH" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,12"/>
+                        <Image Source="/pictures/PeachStartImage.png" Height="170" Stretch="Uniform"/>
+                    </StackPanel>
+                </CheckBox>
+
+                <CheckBox x:Name="BowserCheckBox" IsChecked="False" Style="{StaticResource CardCheckBoxStyle}">
+                    <StackPanel>
+                        <TextBlock Text="BOWSER" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,12"/>
+                        <Image Source="/pictures/BowserStartImage.png" Height="165" Stretch="Uniform"/>
+                    </StackPanel>
+                </CheckBox>
+
+            </WrapPanel>
+
+            <GroupBox Grid.Row="2" Header="Circuits" Foreground="White" FontSize="18" Margin="0,10">
+                <WrapPanel HorizontalAlignment="Center" Margin="10">
+                    <CheckBox x:Name="WideOvalCheckBox"
+                  Content="Wide Oval"
+                  IsChecked="False"
+                  Style="{StaticResource TrackCardCheckBoxStyle}"/>
+
+                    <CheckBox x:Name="ChicaneLoopCheckBox"
+                  Content="Chicane Loop"
+                  IsChecked="False"
+                  Style="{StaticResource TrackCardCheckBoxStyle}"/>
+
+                    <CheckBox x:Name="DoubleBendCheckBox"
+                  Content="Double Bend"
+                  IsChecked="False"
+                  Style="{StaticResource TrackCardCheckBoxStyle}"/>
+
+                    <CheckBox x:Name="TechnicalLoopCheckBox"
+                  Content="Technical Loop"
+                  IsChecked="False"
+                  Style="{StaticResource TrackCardCheckBoxStyle}"/>
+
+                    <CheckBox x:Name="LongSnakeCheckBox"
+                  Content="Long Snake"
+                  IsChecked="False"
+                  Style="{StaticResource TrackCardCheckBoxStyle}"/>
+                </WrapPanel>
+            </GroupBox>
+
+            <Button Grid.Row="3"
+                    Content="START GRAND PRIX"
+                    Width="320"
+                    Height="60"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"
+                    Background="#FFD966"
+                    Foreground="#15192E"
+                    Click="StartButton_Click"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

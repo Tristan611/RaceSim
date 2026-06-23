@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\App.xaml
-3740988688
-17-1281912421
-10-1912382997
+4-1815952378
+24-1942294920
+11-1850090815
 211325492104
-CompetitionStatsWindow.xaml;MainWindow.xaml;RaceStatsWindow.xaml;
+CompetitionStatsWindow.xaml;MainWindow.xaml;RaceStatsWindow.xaml;StartWindow.xaml;
 
 False
 

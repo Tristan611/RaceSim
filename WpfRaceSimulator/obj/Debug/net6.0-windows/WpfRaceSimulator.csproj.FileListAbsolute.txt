@@ -136,6 +136,11 @@ C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\te
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\RaceSimulator.deps.json
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\RaceSimulator.runtimeconfig.json
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\RaceSimulator.exe
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\BowserStartImage.png
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\LuigiStartImage.png
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\MarioStartImage.png
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\PeachStartImage.png
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\YoshiStartImage.png
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\WpfRaceSimulator.exe
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\FinishRaceSimVertical.png
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\FinishRaceSim.png
@@ -246,8 +251,14 @@ C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Co
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Model.pdb
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\RaceSimulator.pdb
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\WpfRaceSimulator.csproj.AssemblyReference.cache
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\CompetitionStatsWindow.baml
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\RaceStatsWindow.baml
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\StartWindow.baml
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\CompetitionStatsWindow.g.cs
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\RaceStatsWindow.g.cs
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\StartWindow.g.cs
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\WpfRaceSimulator_Content.g.cs
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\WpfRaceSimulator_MarkupCompile.cache
@@ -263,7 +274,5 @@ C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\re
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\WpfRaceSimulator.pdb
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\WpfRaceSimulator.genruntimeconfig.cache
 C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\ref\WpfRaceSimulator.dll
-C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\CompetitionStatsWindow.baml
-C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\RaceStatsWindow.baml
-C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\CompetitionStatsWindow.g.cs
-C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\obj\Debug\net6.0-windows\RaceStatsWindow.g.cs
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\BowserKartRaceSim.png
+C:\Users\trist\Source\Repos\RaceSim\WpfRaceSimulator\bin\Debug\net6.0-windows\Pictures\PeachKartRaceSim.png

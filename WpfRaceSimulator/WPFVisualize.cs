@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Media.Imaging;
 using Model;
 using static WpfRaceSimulator.CreatePicture;
@@ -48,75 +49,63 @@ namespace WpfRaceSimulator
 
         public static List<SectionDrawInfo> LastDrawnSections { get; private set; } = new();
 
+        private class TrackPosition
+        {
+            public Section Section { get; set; }
+            public int X { get; set; }
+            public int Y { get; set; }
+            public Direction Direction { get; set; }
+        }
+
         public static BitmapSource DrawTrack(Track track)
         {
-            System.Diagnostics.Debug.WriteLine("DrawTrack wordt aangeroepen!");
             LastDrawnSections.Clear();
-            int sectionSize = 64;
-            int width = 2000;
-            int height = 2000;
 
+            int sectionSize = 64;
+            int margin = 2;
+
+            var positions = CalculateTrackPositions(track);
+
+            int minX = positions.Min(p => p.X);
+            int maxX = positions.Max(p => p.X);
+            int minY = positions.Min(p => p.Y);
+            int maxY = positions.Max(p => p.Y);
+
+            int trackWidthSections = maxX - minX + 1 + (margin * 2);
+            int trackHeightSections = maxY - minY + 1 + (margin * 2);
+
+            int width = trackWidthSections * sectionSize;
+            int height = trackHeightSections * sectionSize;
 
             Bitmap bmp = GiveEmptyBitmap(width, height);
+
             using (Graphics g = Graphics.FromImage(bmp))
             {
-                int x = 10;
-                int y = 10;
-                Direction dir = Direction.East;
-
-                foreach (var section in track.Sections)
+                foreach (var position in positions)
                 {
-                    Direction prevDir = dir;
+                    int drawX = position.X - minX + margin;
+                    int drawY = position.Y - minY + margin;
 
-                    // 1. draai richting bij bochten
-                    if (section.SectionType == Section.SectionTypes.LeftCorner)
-                    {
-                        dir = dir switch
-                        {
-                            Direction.North => Direction.West,
-                            Direction.West => Direction.South,
-                            Direction.South => Direction.East,
-                            Direction.East => Direction.North,
-                            _ => dir
-                        };
-                    }
-                    else if (section.SectionType == Section.SectionTypes.RightCorner)
-                    {
-                        dir = dir switch
-                        {
-                            Direction.North => Direction.East,
-                            Direction.East => Direction.South,
-                            Direction.South => Direction.West,
-                            Direction.West => Direction.North,
-                            _ => dir
-                        };
-                    }
-
-                    // 2. gebruik PREV direction voor finish
-                    Direction drawDir = section.SectionType == Section.SectionTypes.Finish ? prevDir : dir;
-
-                    string imageName = GetSectionImageName(section.SectionType, drawDir);
+                    string imageName = GetSectionImageName(position.Section.SectionType, position.Direction);
                     Bitmap sectionBmp = AddToPictureCache(imageName);
 
                     LastDrawnSections.Add(new SectionDrawInfo
                     {
-                        X = x,
-                        Y = y,
-                        Direction = drawDir
+                        X = drawX,
+                        Y = drawY,
+                        Direction = position.Direction
                     });
 
-                    g.DrawImage(sectionBmp, x * sectionSize, y * sectionSize, sectionSize, sectionSize);
-
-                    // 3. verplaatsen
-                    switch (dir)
-                    {
-                        case Direction.North: y--; break;
-                        case Direction.South: y++; break;
-                        case Direction.East: x++; break;
-                        case Direction.West: x--; break;
-                    }
+                    g.DrawImage(
+                        sectionBmp,
+                        drawX * sectionSize,
+                        drawY * sectionSize,
+                        sectionSize,
+                        sectionSize
+                    );
                 }
             }
+
             return CreateBitmapSourceFromGdiBitmap(bmp);
         }
 
@@ -151,6 +140,63 @@ namespace WpfRaceSimulator
                     : "StartGridHorizontal.png",
                 _ => "StraightHorizontalRaceSim.png"
             };
+        }
+
+        private static List<TrackPosition> CalculateTrackPositions(Track track)
+        {
+            var positions = new List<TrackPosition>();
+
+            int x = 0;
+            int y = 0;
+            Direction dir = Direction.East;
+
+            foreach (var section in track.Sections)
+            {
+                Direction prevDir = dir;
+
+                if (section.SectionType == Section.SectionTypes.LeftCorner)
+                {
+                    dir = dir switch
+                    {
+                        Direction.North => Direction.West,
+                        Direction.West => Direction.South,
+                        Direction.South => Direction.East,
+                        Direction.East => Direction.North,
+                        _ => dir
+                    };
+                }
+                else if (section.SectionType == Section.SectionTypes.RightCorner)
+                {
+                    dir = dir switch
+                    {
+                        Direction.North => Direction.East,
+                        Direction.East => Direction.South,
+                        Direction.South => Direction.West,
+                        Direction.West => Direction.North,
+                        _ => dir
+                    };
+                }
+
+                Direction drawDir = section.SectionType == Section.SectionTypes.Finish ? prevDir : dir;
+
+                positions.Add(new TrackPosition
+                {
+                    Section = section,
+                    X = x,
+                    Y = y,
+                    Direction = drawDir
+                });
+
+                switch (dir)
+                {
+                    case Direction.North: y--; break;
+                    case Direction.South: y++; break;
+                    case Direction.East: x++; break;
+                    case Direction.West: x--; break;
+                }
+            }
+
+            return positions;
         }
     }
 }
