@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Model;
 using static Model.DriversChangedEventArgs;
+using System.Windows;
 
 namespace Controller
 {
@@ -14,7 +15,7 @@ namespace Controller
         private Random _random = new Random(DateTime.Now.Millisecond);
 
         public bool SomethingChanged = false;
-        public Dictionary<Driver, int> FinishedDrivers = new Dictionary<Driver, int>();
+        public List<Driver> FinishedDrivers = new List<Driver>();
         public Random _random2 = new Random();
 
         private Dictionary<Section, SectionData> _positions { get; set; }
@@ -102,9 +103,9 @@ namespace Controller
 
                     if (driver.Finish)
                     {
-                        if (!FinishedDrivers.ContainsKey(driver))
+                        if (!FinishedDrivers.Contains(driver))
                         {
-                            FinishedDrivers.Add(driver, 1);
+                            FinishedDrivers.Add(driver);
                             changed = true;
                         }
                     }
@@ -127,6 +128,28 @@ namespace Controller
 
             if (FinishedDrivers.Count == Drivers.Count)
             {
+                GivePoints();
+
+                string result = $"Eindstand van {Track.Name}\n\n";
+
+                for (int i = 0; i < FinishedDrivers.Count; i++)
+                {
+                    result += $"{i + 1}. {FinishedDrivers[i].Name} - {FinishedDrivers[i].Points} punten totaal\n";
+                }
+
+                result += "\nTussenstand kampioenschap:\n";
+
+                var championshipStandings = Drivers
+                    .OrderByDescending(driver => driver.Points)
+                    .ToList();
+
+                for (int i = 0; i < championshipStandings.Count; i++)
+                {
+                    result += $"{i + 1}. {championshipStandings[i].Name} - {championshipStandings[i].Points} punten\n";
+                }
+
+                Data.RaceFinished?.Invoke(result);
+
                 FinishedDrivers.Clear();
                 Data.NextRace();
             }
@@ -145,6 +168,18 @@ namespace Controller
             }
         }
 
+        public void GivePoints()
+        {
+            int[] pointsPerPosition = { 10, 8, 6, 4, 2 };
+
+            for (int i = 0; i < FinishedDrivers.Count; i++)
+            {
+                if (i < pointsPerPosition.Length)
+                {
+                    FinishedDrivers[i].Points += pointsPerPosition[i];
+                }
+            }
+        }
         public void MagWeerVerderRijden(Driver driver)
         {
             if (_random2.Next(0, 50) > 35)

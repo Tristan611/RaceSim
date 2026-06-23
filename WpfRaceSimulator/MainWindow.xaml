@@ -1,7 +1,7 @@
 ﻿<Window x:Class="WpfRaceSimulator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="956" Width="1346">
+        Title="MainWindow" Height="700" Width="500">
     <Grid>
         <Image x:Name="TrackImage" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Canvas x:Name="MainCanvas" IsHitTestVisible="False"/>

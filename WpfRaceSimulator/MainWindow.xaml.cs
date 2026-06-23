@@ -30,7 +30,8 @@ namespace WpfRaceSimulator
 
             Data.CurrentRace.DriversChanged += DriversChangedHandler;
             Data.RaceChanged += OnRaceChanged;
-
+            Data.RaceFinished += ShowRaceResult;
+            Data.ChampionshipFinished += ShowChampionshipResult;
             TrackImage.Source = WPFVisualize.DrawTrack(Data.CurrentRace.Track);
             UpdateDriverPositions();
             _timer = new DispatcherTimer();
@@ -56,7 +57,10 @@ namespace WpfRaceSimulator
             TrackImage.Source = WPFVisualize.DrawTrack(Data.CurrentRace.Track);
             UpdateDriverPositions();
         }
-
+        private void ShowRaceResult(string result)
+        {
+            MessageBox.Show(result, "Race afgelopen");
+        }
         private void InitializeDriverUI()
         {
             foreach (var driver in Data.CurrentRace.Drivers)
@@ -112,6 +116,11 @@ namespace WpfRaceSimulator
                 TrackImage.Source = WPFVisualize.DrawTrack(args.Track);
                 UpdateDriverPositions();
             });
+        }
+
+        private void ShowChampionshipResult(string result)
+        {
+            MessageBox.Show(result, "Kampioenschap afgelopen");
         }
 
         private void UpdateDriverPositions()
